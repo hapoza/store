@@ -22,12 +22,6 @@ class HomeContextProvider extends Component {
     pageCategory: 'Home',
   })
 
-  componentDidMount() {
-    const { prefetchPage } = this.props.runtime
-    prefetchPage('store/product')
-    prefetchPage('store/search')
-  }
-
   render() {
     return (
       <DataLayerApolloWrapper loading={false} getData={this.getData}>

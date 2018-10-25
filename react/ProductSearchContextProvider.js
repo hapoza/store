@@ -43,12 +43,6 @@ class ProductSearchContextProvider extends Component {
     maxItemsPerPage: PropTypes.number.isRequired,
   }
 
-  componentDidMount() {
-    const { prefetchPage } = this.props.runtime
-    prefetchPage('store/home')
-    prefetchPage('store/product')
-  }
-
   static defaultProps = {
     maxItemsPerPage: DEFAULT_MAX_ITEMS_PER_PAGE,
   }

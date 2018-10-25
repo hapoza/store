@@ -44,13 +44,6 @@ class ProductContextProvider extends Component {
         : true
   }
 
-  componentDidMount() {
-    const { prefetchPage } = this.props.runtime
-    prefetchPage('store/home')
-    prefetchPage('store/search')
-    this.checkNotFoundProduct();
-  }
-
   componentDidUpdate() {
     this.checkNotFoundProduct();
   }

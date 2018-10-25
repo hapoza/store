@@ -15,6 +15,7 @@ const META_ROBOTS = 'index, follow'
 class StoreContextProvider extends Component {
   static propTypes = {
     runtime: PropTypes.shape({
+      prefetchPage: PropTypes.func.isRequired,
       culture: PropTypes.shape({
         country: PropTypes.string,
         locale: PropTypes.string,
@@ -23,6 +24,18 @@ class StoreContextProvider extends Component {
     }),
     children: PropTypes.element,
     push: PropTypes.func,
+  }
+
+  componentDidMount() {
+    const { prefetchPage } = this.props.runtime
+    prefetchPage('store/home')
+    prefetchPage('store/product')
+    prefetchPage('store/category')
+    prefetchPage('store/brand')
+    prefetchPage('store/department')
+    prefetchPage('store/search')
+    prefetchPage('store/checkout')
+    prefetchPage('store/checkout/cart')
   }
 
   render() {
