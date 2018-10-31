@@ -1,0 +1,5 @@
+{
+  "store/product/details": {
+    "component": "vtex.product-details/index"
+  }
+}
