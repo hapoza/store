@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import { withApollo, graphql, compose } from 'react-apollo'
 import { isEmpty } from 'ramda'
 import { withRuntimeContext } from 'render'
+import { Queries } from 'vtex.store-resources'
 
-import {Queries} from 'vtex.store-resources'
 import productPreviewFragment from './queries/productPreview.gql'
 import { cacheLocator } from './cacheLocator'
 

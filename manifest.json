@@ -31,7 +31,8 @@
     "vtex.login": "2.x",
     "vtex.my-account": "1.x",
     "vtex.address-locator": "0.6.4-beta",
-    "vtex.rebuy": "0.2.1-beta"
+    "vtex.rebuy": "0.2.1-beta",
+    "vtex.pixel-manager": "0.x"
   },
   "settingsSchema": {
     "title": "VTEX Store",
