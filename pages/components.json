@@ -1,0 +1,9 @@
+{
+  "StoreContextProvider": {
+    "extensions": {
+      "pixel": {
+        "component": "vtex.render-runtime/ExtensionContainer"
+      }
+    }
+  }
+}
