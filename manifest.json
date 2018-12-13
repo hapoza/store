@@ -27,7 +27,8 @@
     "vtex.product-details": "1.x",
     "vtex.search-result": "3.x",
     "vtex.my-account": "0.x",
-    "vtex.login": "2.x"
+    "vtex.login": "2.x",
+    "vtex.store-resources": "0.x"
   },
   "settingsSchema": {
     "title": "VTEX Store",
